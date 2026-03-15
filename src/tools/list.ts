@@ -74,7 +74,7 @@ export async function listMemories(args: ListMemoriesArgs): Promise<ListMemories
  */
 export const listMemoriesSchema = {
   name: 'list_memories',
-  description: '列出所有已学习的文件及其统计信息。用于查看当前知识库中有哪些内容。',
+  description: '列出所有已学习的文件及其统计信息。当用户问"查看已学习的文件"、"显示记忆列表"、"都有什么文件"、"知识库里有什么"、"列出所有内容"、"查看记忆"时，使用此工具。',
   inputSchema: {
     type: 'object' as const,
     properties: {

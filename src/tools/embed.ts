@@ -154,7 +154,7 @@ export async function embedFile(args: EmbedFileArgs): Promise<EmbedFileResult> {
  */
 export const embedFileSchema = {
   name: 'embed_file',
-  description: '当用户新增了代码文件、接口文档，或者明确要求你学习某个特定文件时，调用此工具读取该文件，将其切片、向量化并存入本地知识库中。支持DeepSeek自动预处理复杂内容。',
+  description: '当用户需要保存文件内容、学习新知识、记住某个文件、将文件加入知识库、存储代码或文档时，调用此工具。触发场景包括：用户说"学习这个文件"、"记住这个文件"、"保存到记忆"、"加入知识库"、"存储这个文档"、"把这个代码记下来"等。支持DeepSeek自动预处理复杂内容。',
   inputSchema: {
     type: 'object' as const,
     properties: {

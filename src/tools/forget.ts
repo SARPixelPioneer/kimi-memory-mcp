@@ -51,7 +51,7 @@ export async function forgetFile(args: ForgetFileArgs): Promise<ForgetFileResult
  */
 export const forgetFileSchema = {
   name: 'forget_file',
-  description: '删除指定文件的所有记忆。当某个文件的内容不再需要或已过期时，使用此工具清除相关记忆。',
+  description: '删除指定文件的所有记忆。当用户说"忘记这个文件"、"删除记忆"、"清除这个文件"、"移除知识库中的文件"、"删掉这个记录"时，使用此工具清除相关记忆。',
   inputSchema: {
     type: 'object' as const,
     properties: {

@@ -98,7 +98,7 @@ export async function searchMemory(args: SearchMemoryArgs): Promise<SearchMemory
  */
 export const searchMemorySchema = {
   name: 'search_memory',
-  description: '在已学习的知识库中搜索相关内容。当你需要回忆之前学习过的文件内容时，使用此工具进行检索。',
+  description: '在已学习的知识库中搜索相关内容。当用户需要查找之前的内容、寻找历史信息、查询已保存的文件、回顾之前的讨论、找之前的代码或文档、查看学习过的资料、检索记忆时，使用此工具。触发词包括：回忆、找、查、搜索、看看、之前、以前、上次、有没有、记得、说过、讨论过等。',
   inputSchema: {
     type: 'object' as const,
     properties: {
