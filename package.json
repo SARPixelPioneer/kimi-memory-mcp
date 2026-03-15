@@ -1,0 +1,37 @@
+{
+  "name": "kimi-memory-mcp",
+  "version": "1.0.0",
+  "description": "智能记忆系统 MCP 服务器 - 为 Kimi Code CLI 提供持久化记忆能力",
+  "author": "your-name",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/kimi-memory-mcp.git"
+  },
+  "keywords": [
+    "mcp",
+    "kimi",
+    "memory",
+    "embedding",
+    "ollama",
+    "chromadb",
+    "deepseek",
+    "rag"
+  ],
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsc --watch"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.4",
+    "chromadb": "^1.9.2",
+    "chromadb-default-embed": "^2.13.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.3.0"
+  }
+}
